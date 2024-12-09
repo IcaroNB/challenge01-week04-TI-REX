@@ -136,7 +136,29 @@
   gap: 40px;
 }
 
-.manager-container-gallery img {
+.manager-imgs {
   width: 340px;
   height: 340px;
+}
+
+.manager-container-card {
+  display: flex;
+  flex-direction: column;
+  color: #331436;
+}
+.manager-container-card-textBox {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  height: 80px;
+  gap: 4px;
+  justify-content: space-around;
+}
+
+.manager-container-card-textBox label {
+  font-size: 16px;
+}
+.manager-container-card-textBox h3 {
+  font-size: 20px;
+  line-height: 28px;
 }
