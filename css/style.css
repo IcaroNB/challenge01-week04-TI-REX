@@ -162,3 +162,27 @@
   font-size: 20px;
   line-height: 28px;
 }
+
+/* Featured container */
+
+.featured-container {
+  display: flex;
+  flex-direction: column;
+  height: 552px;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 170px;
+  text-align: center;
+  color: #331436;
+}
+
+.featured-container-main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.featured-container-main h3 {
+  font-size: 40px;
+  line-height: 48px;
+}
