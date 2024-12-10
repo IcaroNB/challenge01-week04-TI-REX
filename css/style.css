@@ -21,6 +21,16 @@
   line-height: 24px;
 }
 
+.button {
+  width: 240px;
+  height: 48px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: transparent;
+  display: inline-block;
+}
+
 /* Header */
 .header-container {
   background-color: #331436;
@@ -55,13 +65,8 @@
 }
 
 .home-button {
-  width: 240px;
-  height: 48px;
   background-color: #cb4f57;
   color: #fcf4b6;
-  border-radius: 8px;
-  padding: 12px;
-  border: transparent;
 }
 
 /* Banner Container */
@@ -130,13 +135,8 @@
 }
 
 .learn-more {
-  width: 240px;
-  height: 48px;
-  padding: 12px;
   background-color: #331436;
   color: #fff;
-  border-radius: 8px;
-  border: transparent;
 }
 
 .manager-container-gallery {
