@@ -147,6 +147,10 @@ footer {
   justify-content: center;
 }
 
+.socialmedia-container {
+  width: 136px;
+}
+
 .copyright-container {
   display: flex;
   gap: 60px;
