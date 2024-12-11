@@ -4,9 +4,165 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/kanban.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="/assets/index/banner/logo 1.png"
+      type="image/x-icon"
+    />
     <title>Kanban</title>
   </head>
   <body>
-    <h1>Kanban</h1>
+    <header>
+      <nav class="header-container">
+        <div class="logo-container">
+          <img
+            src="/assets/index/banner/logo 1.png"
+            alt="Project Manager logo"
+            id="logo"
+          />
+          <p class="header-text">Project Manager</p>
+        </div>
+        <div class="nav-items text-small">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Settings</a>
+          <a href="#">Profile</a>
+          <input type="text" placeholder="Search in site">
+          <submit>
+            <img src="/assets/kanban/ic-search.png" alt="search icon"/>
+          </submit>
+        </input>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="kanban-container">
+        <div class="kanban-card">
+          <h2>To Do</h2>
+          <span class="square-item">
+            <div class="square-item-head">
+              <img src="/assets/kanban/card1/high.png" alt="High Priority" class="square-item-priority-icon">
+              <p class="square-item-date-text">Oct 16, 24</p>
+            </div>
+            <p class="square-item-task-name">Create app</p>
+            <div class="square-item-low-row">
+              <div class="square-item-delete">
+                <img src="/assets/kanban/card1/Icon.png" alt="Delete action">
+              </div>
+              <div class="square-item-users">
+                <img src="/assets/kanban/card1/user.png" alt="User 1">
+                <img src="/assets/kanban/card1/user(1).png" alt="User 2">
+                <img src="/assets/kanban/card1/user(2).png" alt="User 3">
+                <img src="/assets/kanban/card1/user(3).png" alt="User 4">
+                <img src="/assets/kanban/card1/user(4).png" alt="User 5">
+              </div>
+            </div>
+          </span>
+          <span class="square-item">
+            <div class="square-item-head">
+              <img src="/assets/kanban/card1/mid.png" alt="Mid Priority" class="square-item-priority-icon">
+              <p class="square-item-date-text">Oct 09, 24</p>
+            </div>
+            <p class="square-item-task-name">Train for the project</p>
+            <div class="square-item-low-row">
+              <div class="square-item-delete">
+              <img src="/assets/kanban/card1/Icon.png" alt="Delete action">
+            </div>
+            <div class="square-item-users">
+              <img src="/assets/kanban/card1/user(2).png" alt="User 3">
+              <img src="/assets/kanban/card1/user(4).png" alt="User 5">
+            </div>
+          </div>
+          </span><span class="square-item">
+            <div class="square-item-head">
+              <img src="/assets/kanban/card1/low.png" alt="Low Priority" class="square-item-priority-icon">
+              <p class="square-item-date-text">Oct 06, 24</p>
+            </div>
+            <p class="square-item-task-name">Make popcorn</p>
+            <div class="square-item-low-row">
+              <div class="square-item-delete">
+              <img src="/assets/kanban/card1/Icon.png" alt="Delete action">
+              </div>
+              <div class="square-item-users">
+              <img src="/assets/kanban/card1/user(4).png" alt="User 5">
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="kanban-card">
+          <h2>In Progress</h2>
+          <span class="square-item">
+            <div class="square-item-head">
+              <img src="/assets/kanban/card1/high.png" alt="High Priority" class="square-item-priority-icon">
+              <p class="square-item-date-text">Oct 08, 24</p>
+            </div>
+            <p class="square-item-task-name">Debug error</p>
+            <div class="square-item-low-row">
+              <div class="square-item-delete">
+                <img src="/assets/kanban/card1/Icon.png" alt="Delete action">
+              </div>
+              <div class="square-item-users">
+                <img src="/assets/kanban/card1/user.png" alt="User 1">
+                <img src="/assets/kanban/card1/user(1).png" alt="User 2">
+                <img src="/assets/kanban/card1/user(2).png" alt="User 3">
+                <img src="/assets/kanban/card1/user(3).png" alt="User 4">
+                <img src="/assets/kanban/card1/user(4).png" alt="User 5">
+              </div>
+            </div>
+          </span>
+        </div>
+        <div class="kanban-card">
+          <h2>Complete</h2>
+          <span class="square-item">
+            <div class="square-item-head">
+              <img src="/assets/kanban/card1/low.png" alt="Low Priority" class="square-item-priority-icon">
+              <p class="square-item-date-text">Apr 02, 21</p>
+            </div>
+            <p class="square-item-task-name">Eat a sandwich</p>
+            <div class="square-item-low-row">
+              <div class="square-item-delete">
+              <img src="/assets/kanban/card1/Icon.png" alt="Delete action">
+            </div>
+            <div class="square-item-users">
+              <img src="/assets/kanban/card1/user(2).png" alt="User 3">
+              <img src="/assets/kanban/card1/user(4).png" alt="User 5">
+            </div>
+          </div>
+          </span><span class="square-item">
+            <div class="square-item-head">
+              <img src="/assets/kanban/card1/mid.png" alt="Mid Priority" class="square-item-priority-icon">
+              <p class="square-item-date-text">Jan 28, 86</p>
+            </div>
+            <p class="square-item-task-name">Drink water</p>
+            <div class="square-item-low-row">
+              <div class="square-item-delete">
+              <img src="/assets/kanban/card1/Icon.png" alt="Delete action">
+              </div>
+              <div class="square-item-users">
+              <img src="/assets/kanban/card1/user(4).png" alt="User 5">
+              </div>
+            </div>
+          </span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="socialmedia-container">
+        <img src="/assets/index/footer/facebook.png" alt="facebook logo" />
+        <img src="/assets/index/footer/instagram.png" alt="instagram logo" />
+        <img src="/assets/index/footer/linkedIn.png" alt="linkedin logo" />
+      </div>
+      <div class="copyright-container text-medium">
+        <p>&#169; 2024 Project Manager. All rights reserved.</p>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </footer>
   </body>
 </html>
