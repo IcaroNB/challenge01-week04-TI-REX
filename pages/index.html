@@ -164,22 +164,20 @@
           <h3 class="text-large">Subscribe to Updates</h3>
           <p class="text-small">Stay informed with our latest updates</p>
         </div>
-        <div class="subscribe-form">
+        <form class="subscribe-form">
           <div class="subscrime-form-email-container">
             <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Enter your email" />
+            <input type="email" name="email" placeholder="Enter your email" id="subscribeEmail" required/>
             <dd>We promise not to spam</dd>
           </div>
           <div class="subscrime-form-name-container">
             <label for="name">Name</label>
-            <input type="text" name="name" placeholder="Enter your name" />
+            <input type="text" name="name" placeholder="Enter your name" required id="subscrimeName"/>
           </div>
           <a href="login.html" class="button-container-link">
-            <button class="learn-more button text-small button-container-link"/>
-            Subscribe
-            </button>
+            <input type="submit" class="learn-more button text-small button-container-link" value="Subscribe"/>
           </a>
-        </div>
+        </form>
       </div>
       <footer>
         <div class="socialmedia-container">
