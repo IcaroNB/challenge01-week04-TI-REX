@@ -21,13 +21,14 @@
     <header>
       <nav class="header-container">
         <div class="logo-container">
-          <img
+          <a href="index.html" class="button-container-link">
+            <img
             src="/assets/index/banner/logo 1.png"
             alt="Project Manager logo"
             id="logo"
           />
           <p class="header-text">Project Manager</p>
-        </div>
+          </a>
       </nav>
     </header>
     <main>
@@ -36,7 +37,7 @@
           <h3 class="text-large">Login Information</h3>
           <p class="text-small">Enter your credentials</p>
         </div>
-        <form class="login-form">
+        <div class="login-form">
           <div class="login-form-email-container">
             <label for="email">Email</label>
             <input type="email" name="email" placeholder="Enter your email" />
@@ -49,12 +50,12 @@
               placeholder="Enter your password"
             />
           </div>
-          <input
-            type="submit"
-            value="Login"
-            class="learn-more button text-small"
-          />
-        </form>
+          <a href="kanban.html" class="button-container-link">
+            <button
+              class="learn-more button text-small button-container-link"
+            >Login</button>
+          </a>
+        </div>
       </div>
     </main>
     <footer>
