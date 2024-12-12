@@ -264,6 +264,7 @@ a {
   flex-direction: column;
   box-sizing: border-box;
   gap: 40px;
+  color: #331436;
 }
 
 .subscrime-form-email-container,
@@ -271,6 +272,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  font-weight: 500;
 }
 
 .subscrime-form-email-container label,
