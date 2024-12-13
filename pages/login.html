@@ -37,26 +37,27 @@
           <h3 class="text-large">Login Information</h3>
           <p class="text-small">Enter your credentials</p>
         </div>
-        <div class="login-form">
+        <form class="login-form" id="login-form">
           <div class="login-form-email-container">
             <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Enter your email" />
+            <input type="email" id="email" placeholder="Enter your email" />
           </div>
           <div class="login-form-name-container">
             <label for="password">Password</label>
             <input
               type="password"
               name="password"
+              id="password"
               placeholder="Enter your password"
             />
           </div>
-          <a href="kanban.html" class="button-container-link">
-            <button
-              class="learn-more button text-small button-container-link"
-            >Login</button>
-          </a>
+            <input
+            type="submit"
+            value="Login"
+            class="learn-more button text-small button-container-link"
+            ></button>
         </div>
-      </div>
+      </form>
     </main>
     <footer>
       <div class="socialmedia-container">

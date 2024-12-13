@@ -28,13 +28,17 @@ subscribeForm.addEventListener("submit", (e) => {
   } else {
     messageBox.classList.remove("error");
     messageBox.classList.add("hidden");
+
+    localStorage.setItem("userEmail", email);
+    localStorage.setItem("userName", name);
+
     window.location.href = "/pages/login.html";
   }
 });
 
 // Validating received values
 
-const validateValues = (email, name) => {
+const validateValues = function (email, name) {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   const nameRegex = /^[a-zA-ZÀ-ÿ\s]+$/;
 
