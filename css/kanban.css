@@ -144,7 +144,6 @@ a {
   padding: 10px;
   gap: 10px;
   background-color: #f8f2ff;
-
   border-radius: 8px;
   border: 1px solid #331434;
 }
@@ -158,6 +157,9 @@ a {
 .square-item-low-row {
   display: flex;
   justify-content: space-between;
+  width: 180px;
+  height: 39px;
+  padding: 7px;
   align-items: center;
 }
 
@@ -175,6 +177,20 @@ a {
   font-size: 12px;
   line-height: 24px;
   font-weight: bolder;
+}
+
+.square-item-delete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.square-item-delete-btn {
+  background-image: url(/assets/kanban/card1/Icon.png);
+  background-size: 80%;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-repeat: no-repeat;
 }
 
 /* Footer */
