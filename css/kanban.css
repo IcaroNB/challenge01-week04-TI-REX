@@ -146,6 +146,7 @@ a {
   background-color: #f8f2ff;
   border-radius: 8px;
   border: 1px solid #331434;
+  cursor: grab;
 }
 
 .square-item-head {

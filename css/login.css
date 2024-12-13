@@ -4,6 +4,10 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+body {
+  height: 100%;
+  overflow: hidden;
+}
 
 a {
   text-decoration: none;
@@ -67,7 +71,7 @@ a {
 .header-container {
   background-color: #331436;
   color: #fff;
-  height: 114px;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -96,12 +100,13 @@ a {
 
 .login-container {
   display: flex;
-  height: 600px;
+  min-height: calc(100vh - 80px - 220px);
   padding: 60px 170px;
   gap: 60px;
   align-items: center;
   justify-content: center;
   color: #331436;
+  flex: 1;
 }
 
 .login-container-main {
@@ -206,4 +211,101 @@ footer {
 .copyright-container a,
 .button a {
   color: #fff;
+}
+
+/* Responsiveness */
+
+/* Mobile 378px */
+@media (max-width: 375px) {
+  .header-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .logo-container a {
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .login-container {
+    width: 100%;
+    flex-direction: column;
+    padding: 50px;
+    gap: 0;
+  }
+
+  .login-container-main {
+    width: 100%;
+    align-items: center;
+    gap: 0;
+  }
+
+  .login-container-main h3 {
+    display: none;
+  }
+
+  .login-container-main p {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .login-form {
+    padding: 50px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .login-form label {
+    display: block;
+    align-self: center;
+  }
+
+  footer {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .copyright-container {
+    flex-direction: column;
+    padding: 5px;
+    gap: 0px;
+    align-items: center;
+  }
+
+  .copyright-container p,
+  .copyright-container a {
+    font-size: 12px;
+  }
+}
+
+/* Tablet - 798px */
+@media (min-width: 376px) and (max-width: 768px) {
+  .header-container {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .logo-container a {
+    margin: 0px;
+  }
+
+  .copyright-container p,
+  .copyright-container a {
+    font-size: 16px;
+  }
+
+  .socialmedia-container {
+    gap: 10px;
+  }
+
+  .copyright-container {
+    padding: 10px;
+    gap: 20px;
+  }
 }
