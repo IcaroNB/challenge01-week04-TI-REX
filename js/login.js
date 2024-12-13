@@ -21,10 +21,13 @@ loginForm.addEventListener("submit", (e) => {
     messageBox.classList.add("error");
     messageBox.innerText = errorLogin;
   } else {
-    messageBox.classList.remove("error");
-    messageBox.classList.add("hidden");
-    loginButton.classList.remove("learn-more");
-    loginButton.classList.add("success");
+    setTimeout(() => {
+      messageBox.classList.remove("error");
+      messageBox.classList.add("hidden");
+      loginButton.classList.remove("learn-more");
+      loginButton.classList.add("success");
+      loginButton.value = "Success!";
+    }, 500);
     setTimeout(() => {
       localStorage.setItem("userEmail", email);
       localStorage.setItem("userPassword", password);

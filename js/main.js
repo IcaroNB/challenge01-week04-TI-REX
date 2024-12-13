@@ -4,6 +4,7 @@ const subscribeForm = document.getElementById("subscribeForm");
 const subscribeEmail = document.getElementById("subscribeEmail");
 const subscribeName = document.getElementById("subscribeName");
 const messageBox = document.getElementById("message");
+const subscribeButton = document.getElementById("subscribeButton");
 
 // Capturing events
 
@@ -26,13 +27,19 @@ subscribeForm.addEventListener("submit", (e) => {
     messageBox.classList.add("error");
     messageBox.innerText = errorMessage;
   } else {
-    messageBox.classList.remove("error");
-    messageBox.classList.add("hidden");
+    setTimeout(() => {
+      messageBox.classList.remove("error");
+      messageBox.classList.add("hidden");
+      subscribeButton.classList.remove("learn-more");
+      subscribeButton.classList.add("success");
+      subscribeButton.value = "Success!";
+    }, 500);
+    setTimeout(() => {
+      localStorage.setItem("userEmail", email);
+      localStorage.setItem("userName", name);
 
-    localStorage.setItem("userEmail", email);
-    localStorage.setItem("userName", name);
-
-    window.location.href = "/pages/login.html";
+      window.location.href = "/pages/login.html";
+    }, 1000);
   }
 });
 

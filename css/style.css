@@ -36,6 +36,11 @@ a {
   display: inline-block;
 }
 
+.button:hover {
+  transition: 0.4s;
+  opacity: 80%;
+}
+
 .button-container-link {
   text-decoration: none;
 }
@@ -49,6 +54,12 @@ a {
 .error {
   color: #ff0000;
   font-weight: bold;
+}
+
+.success {
+  background-color: #4caf50;
+  color: white;
+  border: none;
 }
 
 /* Header */
