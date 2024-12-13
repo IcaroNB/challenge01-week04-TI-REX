@@ -45,6 +45,23 @@ a {
   opacity: 80%;
 }
 
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+  border: 1px dashed orange;
+  margin-top: -30px;
+  width: 520px;
+}
+
+.success {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
 /* Header */
 
 .header-container {
