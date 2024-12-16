@@ -34,12 +34,8 @@ subscribeForm.addEventListener("submit", (e) => {
       subscribeButton.classList.add("success");
       subscribeButton.value = "Success!";
     }, 500);
-    setTimeout(() => {
-      localStorage.setItem("userEmail", email);
-      localStorage.setItem("userName", name);
-
-      window.location.href = "/pages/login.html";
-    }, 1000);
+    localStorage.setItem("userEmail", email);
+    localStorage.setItem("userName", name);
   }
 });
 

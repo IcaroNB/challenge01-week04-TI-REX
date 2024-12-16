@@ -215,7 +215,7 @@ footer {
 
 /* Responsiveness */
 
-/* Mobile 378px */
+/* Mobile 375px */
 @media (max-width: 375px) {
   .header-container {
     width: 100%;
@@ -282,30 +282,34 @@ footer {
   }
 }
 
-/* Tablet - 798px */
+/* Tablet - 768px */
 @media (min-width: 376px) and (max-width: 768px) {
   .header-container {
-    width: 100%;
-    justify-content: center;
-    padding: 10px;
-    align-items: center;
+    padding: 15px;
   }
 
   .logo-container a {
-    margin: 0px;
+    margin: 5px;
+  }
+
+  .login-container-main {
+    flex-direction: column;
+  }
+  .login-container-main h3 {
+    display: none;
   }
 
   .copyright-container p,
   .copyright-container a {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .socialmedia-container {
-    gap: 10px;
+    gap: 15px;
   }
 
   .copyright-container {
     padding: 10px;
-    gap: 20px;
+    gap: 15px;
   }
 }
