@@ -369,3 +369,48 @@ footer {
 .button a {
   color: #fff;
 }
+
+/* Responsiveness */
+
+@media (max-width: 375px) {
+  /* Header */
+  .logo-container {
+    justify-content: space-evenly;
+  }
+  .logo-container p {
+    font-size: 18px;
+  }
+  .button-container-link button {
+    font-size: 14px;
+    width: 100px;
+  }
+  /* Main */
+
+  .banner-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .banner-container h1 {
+    font-size: 20px;
+  }
+
+  .banner-container-main {
+    width: 370px;
+    height: auto;
+  }
+
+  .banner-container p {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .banner-container-img {
+  }
+
+  #banner-img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 10px;
+  }
+}
